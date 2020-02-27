@@ -1,0 +1,35 @@
+{
+  "name": "@dgx/coding-standards",
+  "version": "0.0.0-DGX",
+  "description": "DGX coding standards regarding linting, commit standards, & more",
+  "keywords": [
+    "dgx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datagap/ui-semantic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datagap/ui-semantic.git"
+  },
+  "license": "MIT",
+  "author": "DGX",
+  "contributors": [
+    "Truong Nguyen <truong@datagap.io>"
+  ],
+  "dependencies": {
+    "codelyzer": "^5.2.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-angular": "^8.1.0",
+    "@commitlint/travis-cli": "^8.1.0",
+    "husky": "^2.7.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "tslint": "^5.20.0",
+    "tslint-angular": "^3.0.2",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-sonarts": "1.9.0"
+  }
+}

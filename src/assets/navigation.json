@@ -1,0 +1,79 @@
+{
+  "SideNav": [
+    {
+      "url": "dashboard",
+      "icon": "dashboard",
+      "title": "Dashboard",
+      "tooltip": "Dashboard Overview",
+      "hidden": false
+    },
+    {
+      "url": "demo",
+      "icon": "demo",
+      "title": "Demo",
+      "tooltip": "Demo Overview",
+      "hidden": false
+    },
+    {
+      "title": "Getting Started",
+      "tooltip": "Getting Started",
+      "children": [
+        {
+          "url": "steps/1",
+          "icon": "assessment",
+          "title": "Assessment",
+          "tooltip": "Assessment"
+        },
+        {
+          "url": "steps/2",
+          "icon": "build",
+          "title": "Build",
+          "tooltip": "Build"
+        }
+      ]
+    },
+    {
+      "title": "Categories",
+      "tooltip": "Show categories",
+      "children": [
+        {
+          "url": "categories/eco",
+          "icon": "eco",
+          "title": "Eco",
+          "tooltip": "Eco"
+        },
+        {
+          "url": "categories/explore",
+          "icon": "explore",
+          "title": "Explore",
+          "tooltip": "Explore"
+        }
+      ]
+    }
+  ],
+  "AppBar": [
+    {
+      "url": "/",
+      "icon": "dashboard",
+      "title": "Dashboard",
+      "tooltip": "Dashboard Overview",
+      "hidden": false
+    }
+  ],
+  "Footer": [
+    {
+      "url": "/",
+      "icon": "dashboard",
+      "title": "Dashboard",
+      "tooltip": "Dashboard Overview",
+      "hidden": false
+    },
+    {
+      "url": "/",
+      "icon": "dashboard",
+      "title": "Dashboard",
+      "tooltip": "Dashboard Overview",
+      "hidden": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@dgx/bootstrap",
+  "version": "0.0.0-DGX",
+  "description": "UI Platform built on Angular Material",
+  "keywords": [
+    "angular",
+    "material",
+    "material design",
+    "components",
+    "reusable"
+  ],
+  "bugs": {
+    "url": "https://github.com/datagap/ui-semantic.git"
+  },
+  "license": "MIT",
+  "author": "DataGap",
+  "contributors": [
+    "Truong Nguyen <truong@datagap.io>"
+  ],
+  "dependencies": {
+    "@dgx/core": "~1.0.0-beta.0"
+  },
+  "peerDependencies": {
+    "@angular/common": "0.0.0-NG",
+    "@angular/core": "0.0.0-NG",
+    "@angular/forms": "0.0.0-NG",
+    "@angular/router": "0.0.0-NG"
+  }
+}

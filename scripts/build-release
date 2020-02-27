@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -e
+
+# clean up first if building again
+rm -rf ./src/platform/node_modules
+rm -rf ./deploy
+
+# BUILD: @dgx/core primary entrypoint
+./node_modules/@angular/cli/bin/ng build ui-core
+
+echo 'Compiling and moving moving some requried files not handled by ng-packagr'
+gulp move-required-core-files
+gulp compile-core-sass
+echo 'Completed compiling and moving moving some requried files not handled by ng-packagr'
+
+# HACK (Remove in future): used to resolve ng-packagr current lack of support for Intra-package dependencies between primary entry points
+# HACK START
+mkdir -p src/platform/node_modules/@dgx
+cp -r deploy/platform/core src/platform/node_modules/@dgx
+# HACK END
+
+# BUILD: @dgx/bootstrap primary entrypoint
+./node_modules/@angular/cli/bin/ng build ui-bootstrap
+cp -r deploy/platform/startup src/platform/node_modules/@dgx
+
+# HACK (Remove in future): remove remnants of platform/node_modules was used for building purposes
+rm -rf src/platform/node_modules
+
+# Need to move required file after ng-packagr runs because ng-packagr overrides primary entrypoint folders
+gulp move-additional-platform-files
+gulp move-assets-package
+gulp move-coding-standards-package
