@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { DemoComponent } from './demo.component';
 import { demoRoutes } from './demo.routes';
 
+import { UiCommonModule } from '@dgx/core/common';
+import { UiMediaModule } from '@dgx/core/media';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, demoRoutes],
+  imports: [CommonModule, FormsModule, UiCommonModule, UiMediaModule, demoRoutes],
   exports: [DemoComponent],
   declarations: [DemoComponent],
   providers: [],
